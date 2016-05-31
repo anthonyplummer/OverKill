@@ -10,13 +10,13 @@ grunt.initConfig({
    */
 
   project: {
-    name: 'FlashTalker',
-    website: 'https://www.github.com/plummera/OverKill/',
+    name: 'OverWatch',
+    website: 'https://www.github.com/plummera/OverWatch/',
     assets: 'assets',
     author: 'Anthony T. Plummer',
-    css: 'overkill.css',
-    scss: '<%= project.assets %>/scss/css/overkill.scss',
-    js: '<%= project.assets %>/js/overkill.js'
+    css: 'overwatch.css',
+    scss: '<%= project.assets %>/scss/css/overwatch.scss',
+    js: '<%= project.assets %>/js/overwatch.js'
   },
 
   // Metadata.
@@ -40,7 +40,7 @@ grunt.initConfig({
 
     sass: {
       src: ['<%= project.assets %>/test/scss/**/*.scss'],
-      dest: '<%= project.assets %>/scss/css/overkill.scss'
+      dest: '<%= project.assets %>/scss/css/overwatch.scss'
     },
 
     js: {
@@ -79,7 +79,7 @@ grunt.initConfig({
         "$": false
       }
     },
-    overkill: {
+    overwatch: {
       src: ['<%= project.js %>']
     }
   },
@@ -88,14 +88,14 @@ grunt.initConfig({
    * Sass
    */
   sass: {
-    overkill: {
+    overwatch: {
       options: {
         style: 'expanded',
         compass: true
       },
 
       files: {
-        '<%= project.assets %>/css/overkill.css': '<%= project.assets %>/scss/css/overkill.scss'
+        '<%= project.assets %>/css/overwatch.css': '<%= project.assets %>/scss/css/overwatch.scss'
       }
     }
   },
@@ -105,9 +105,9 @@ grunt.initConfig({
       livereload: true
     },
 
-    overkill: {
+    overwatch: {
       files: ['<%= project.assets %>/test/js/**/*.js', '<%= project.assets %>/test/scss/**/*.scss'],
-      tasks: ['jshint', 'concat:sass', 'sass', 'concat', 'uglify']
+      tasks: ['concat:sass', 'sass', 'concat', 'uglify']
     }
   }
 });
@@ -122,5 +122,5 @@ grunt.loadNpmTasks('grunt-contrib-livereload');
 grunt.loadNpmTasks('grunt-contrib-compass');
 
 // Default task.
-grunt.registerTask('default', ['jshint', 'concat:sass', 'sass', 'concat', 'uglify']);
+grunt.registerTask('default', ['concat:sass', 'sass', 'concat', 'uglify']);
 }

@@ -1,8 +1,9 @@
 <html>
   <head>
-    <title>Angular 2 QuickStart JS</title>
+    <title>OverWatch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/overkill.css">
+    <link rel="stylesheet" href="assets/css/overwatch.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfill -->
@@ -18,15 +19,36 @@
     <script src="node_modules/@angular/platform-browser/platform-browser.umd.js"></script>
     <script src="node_modules/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js"></script>
 
+    <!-- Load jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- Load Bootstrap -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
     <!-- 2. Load our 'modules' -->
     <script src='app/app.component.js'></script>
     <script src='app/main.js'></script>
+
+    <!-- Load ScrollMagic -->
+    <script src="node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js
+  "></script>
+
+    <!-- 2. Load 'OverWatch' -->
+    <script src='assets/js/overwatch.js'></script>
 
   </head>
 
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <div class="site-wrapper">
+
+      <div id="scene01" class="scene" ng-app="overwatch">
+        <nav class="navbar navbar-inverse"></nav>
+        <overwatch>Loading...</overwatch>
+        <p></p>
+      </div>
+
+    </div>
   </body>
 
 </html>
