@@ -1,6 +1,7 @@
-var controller = new ScrollMagic.Controller();
+$(document).ready(function() {
+  var controller = new ScrollMagic.Controller();
 
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger"})
-                .setVelocity("nav", {opacity: 0}, {duration:400})
-                .addIndicators() // add indicators (requires plugin)
-                .addTo(controller);
+  var scene1 = new ScrollMagic.Scene({container: "#scene01"})
+                  .addIndicators() // add indicators (requires plugin)
+                  .addTo(controller);
+});

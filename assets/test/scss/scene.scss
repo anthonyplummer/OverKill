@@ -1,11 +1,16 @@
 .scene {
   background: black;
   color: gold;
-  font-size: 10em;
+  font-size: 1em;
   height: 100%;
   width: 100%;
 }
 
 #scene01 {
   background: url('../images/backgrounds/scene01.jpg');
+  padding: 5%;
+}
+
+.navbar-default {
+  margin-bottom: 0px !important;
 }
