@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var controller = new ScrollMagic.Controller();
 
-  var scene1 = new ScrollMagic.Scene({container: "#scene01"})
+  var scene1 = new ScrollMagic.Scene()
                   .addIndicators() // add indicators (requires plugin)
                   .addTo(controller);
 });
