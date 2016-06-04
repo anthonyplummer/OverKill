@@ -4,6 +4,7 @@ app.factory('photos', ['$http', function($http) {
            return data;
          })
          .error(function(data) {
+           console.log(data);
            return data;
          });
 }]);
