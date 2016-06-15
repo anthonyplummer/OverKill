@@ -2,9 +2,6 @@ $(document).ready(function() {
 
   // adjust Scene #1
 
-  $("html, body").animate({scrollTop: $('#scene01').offset().top }, 100);
-  $('body').addClass('no_overflow');
-
   if (!name) {
     var name = "Guest";
   }
@@ -17,34 +14,20 @@ $(document).ready(function() {
               '<p>This is the <u>OverWatch</u> program. Simplistic in nature, cell-splitting accuracy, lightweight, portable, and scalable enough to map the entire enterprise column, end-to-end.</p>' +
               '</div>';
 
-  if (scene01) {
-      console.log("Awesome job! You've made it here. Enter the PIN Anthony gave you:");
-  }
-  $("#scene01").addClass("scene fluid-container");
-  $("#scene01").append(row);
-  $("#scene01 .row").append(greeting);
+  var scene = document.getElementsByClassName("scene");
 
-
-  $(function () { // wait for document ready
-  		// init
-  		var controller = new ScrollMagic.Controller({
-  			globalSceneOptions: {
-  				triggerHook: 'onLeave'
-  			}
-  		});
-
-  		// get all slides
-  		var slides = document.querySelectorAll("div.scene");
-
-  		// create scene for every slide
-  		for (var i=0; i<slides.length; i++) {
-  			new ScrollMagic.Scene({
-  					triggerElement: slides[i]
-  				})
-  				.setPin(slides[i])
-  				.addIndicators() // add indicators (requires plugin)
-  				.addTo(controller);
-  		}
-  	});
-
+  $(document).ready(function() {
+    for (i=0;i<scene.length;i++) {
+      if (i == 0) {
+        console.log("Awesome job! You've made it here. Enter the PIN Anthony gave you:");
+      }
+      while (i > 7) {
+        console.log("broke just coz");
+        break;
+      }
+      $(scene[i]).attr('id', 'scene'+ i);
+      $(scene[i]).addClass("container");
+      console.log("Scene #" + i + " Reporting for duty!");
+    }
+  });
 });

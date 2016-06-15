@@ -1,11 +1,10 @@
-/*! OverWatch - v0.1 - 2016-06-03
+/*! OverWatch - v0.1 - 2016-06-15
  * https://www.github.com/plummera/OverWatch//
 * Copyright (c) 2016 Anthony T. Plummer; Unlicensed for the free! */
 .scene {
   background: black;
   color: gold;
   font-size: 1em;
-  height: 800px;
   padding: 5%;
   width: 100%;
 }
@@ -16,37 +15,37 @@
   font-size: x-large;
 }
 
-#scene01 {
+#scene0 {
   background: url("../images/backgrounds/scene01.jpg");
   background-size: cover;
 }
 
-#scene02 {
+#scene1 {
   background: url("../images/b_g.png");
   background-size: cover;
 }
 
-#scene03 {
+#scene2 {
   background: url("../images/backgrounds/scene03.jpg");
   background-size: cover;
 }
 
-#scene04 {
+#scene3 {
   background: url("../images/backgrounds/scene04.jpg");
   background-size: cover;
 }
 
-#scene05 {
+#scene4 {
   background: url("../images/backgrounds/scene05.jpg");
   background-size: cover;
 }
 
-#scene06 {
+#scene5 {
   background: url("../images/backgrounds/scene06.jpg");
   background-size: cover;
 }
 
-#scene07 {
+#scene6 {
   background: url("../images/backgrounds/scene07.jpg");
   background-size: cover;
 }
@@ -84,6 +83,10 @@ p {
 
 .navbar-default {
   margin-bottom: 0px !important;
+}
+
+.no_overflow {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=overwatch.css.map */

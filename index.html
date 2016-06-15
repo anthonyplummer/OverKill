@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>OverWatch</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/overwatch.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -56,7 +56,7 @@
   <!-- 3. Display the application -->
   <body ng-app="overwatch">
 
-    <div class="site-wrapper" nj-view>
+    <div class="site-wrapper">
 
         <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -74,18 +74,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
+                <li class="active"><a href="#">Projects <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Profile</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Server Configuration & Install</a></li>
+                    <li><a href="#">Web Application Development</a></li>
+                    <li><a href="#">RESTful API Services</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Anthony's Github</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="#">Heroku of Excellence</a></li>
                   </ul>
                 </li>
               </ul>
@@ -96,15 +96,15 @@
                 <button type="submit" class="btn btn-default">Submit</button>
               </form>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <li><a href="#">The Dojo</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DO NOT CLICK ME! <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">Personal Contact Info</a></li>
+                    <li><a href="#">Professional Contact Info</a></li>
+                    <li><a href="#">Cover Info</a></li>
                     <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">Dossier</a></li>
                   </ul>
                 </li>
               </ul>
@@ -112,36 +112,36 @@
           </div><!-- /.container-fluid -->
         </nav>
 
-        <div id="scene01">
+        <div class="scene">
           <overwatch></overwatch>
         </div>
 
-        <div id="scene02">
+        <div class="scene">
           <div ng-view>
           </div>
         </div>
 
-        <div id="scene03">
+        <div class="scene">
           <div ng-controller="HomeController"></div>
           <p>What the fuck test?!</p>
         </div>
 
-        <div id="scene04">
+        <div class="scene">
           <div ng-controller="HomeController"></div>
           <p>What the fuck test?!</p>
         </div>
 
-        <div id="scene05">
+        <div class="scene">
           <div ng-controller="HomeController"></div>
           <p>What the fuck test?!</p>
         </div>
 
-        <div id="scene06">
+        <div class="scene">
           <div ng-controller="HomeController"></div>
           <p>What the fuck test?!</p>
         </div>
 
-        <div id="scene07">
+        <div class="scene">
           <div ng-controller="HomeController"></div>
           <p>What the fuck test?!</p>
         </div>
