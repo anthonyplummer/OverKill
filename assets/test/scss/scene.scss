@@ -3,8 +3,10 @@
   color: gold;
   font-size: 1em;
   padding: 5%;
+  height: 100vh;
   // top: 0px !important;
   width: 100%;
+  overflow: hidden;
 
     h1 {
       font-size: -webkit-xxx-large;
@@ -18,3 +20,16 @@
 
     }
 };
+
+.scene > * {
+		height: 200%;
+		position: relative;
+		top: -100%;
+	}
+
+@media screen and (max-height: 800px) {
+  .scene {
+    height: 800px;
+    top: 0px !important;
+  }
+}

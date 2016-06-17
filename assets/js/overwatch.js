@@ -1,4 +1,4 @@
-/*! OverWatch - v0.1 - 2016-06-15
+/*! OverWatch - v0.1 - 2016-06-17
  * https://www.github.com/plummera/OverWatch//
 * Copyright (c) 2016 Anthony T. Plummer; Unlicensed for the free! */
 app.controller('HomeController', ['$scope', 'photos', function($scope, photos) {
@@ -36,13 +36,11 @@ $(document).ready(function() {
       if (i == 0) {
         console.log("Awesome job! You've made it here. Enter the PIN Anthony gave you:");
       }
-      while (i > 7) {
-        console.log("broke just coz");
-        break;
+      if (i < 7) {
+        $(scene[i]).attr('id', 'scene'+ i);
+        $(scene[i]).addClass("container");
+        console.log("Scene #" + i + " Reporting for duty!");
       }
-      $(scene[i]).attr('id', 'scene'+ i);
-      $(scene[i]).addClass("container");
-      console.log("Scene #" + i + " Reporting for duty!");
     }
   });
 });
@@ -55,13 +53,14 @@ $(document).ready(function() {
 
 	// create scene for every slide
 	for (i=0; i<slides.length; i++) {
-		new ScrollMagic.Scene({
-		    triggerElement: slides[i]        
-			})
-			.setPin(slides[i])
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	}
+  	new ScrollMagic.Scene({
+  	    triggerElement: slides[i],
+        triggerHook: "onLeave"
+  		})
+  		.setPin(slides[i])
+  		.addIndicators() // add indicators (requires plugin)
+  		.addTo(controller);
+  }
 });
 
 app.factory('photos', ['$http', function($http) {

@@ -6,11 +6,12 @@ $(document).ready(function() {
 
 	// create scene for every slide
 	for (i=0; i<slides.length; i++) {
-		new ScrollMagic.Scene({
-		    triggerElement: slides[i]        
-			})
-			.setPin(slides[i])
-			.addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	}
+  	new ScrollMagic.Scene({
+  	    triggerElement: slides[i],
+        triggerHook: "onLeave"
+  		})
+  		.setPin(slides[i])
+  		.addIndicators() // add indicators (requires plugin)
+  		.addTo(controller);
+  }
 });

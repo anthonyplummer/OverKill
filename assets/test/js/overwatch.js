@@ -21,13 +21,11 @@ $(document).ready(function() {
       if (i == 0) {
         console.log("Awesome job! You've made it here. Enter the PIN Anthony gave you:");
       }
-      while (i > 7) {
-        console.log("broke just coz");
-        break;
+      if (i < 7) {
+        $(scene[i]).attr('id', 'scene'+ i);
+        $(scene[i]).addClass("container");
+        console.log("Scene #" + i + " Reporting for duty!");
       }
-      $(scene[i]).attr('id', 'scene'+ i);
-      $(scene[i]).addClass("container");
-      console.log("Scene #" + i + " Reporting for duty!");
     }
   });
 });

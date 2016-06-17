@@ -1,13 +1,19 @@
-/*! OverWatch - v0.1 - 2016-06-15
+/*! OverWatch - v0.1 - 2016-06-17
  * https://www.github.com/plummera/OverWatch//
 * Copyright (c) 2016 Anthony T. Plummer; Unlicensed for the free! */
+.navbar-default {
+  z-index: 2;
+}
+
 .scene {
   background: black;
   color: gold;
   font-size: 1em;
   padding: 5%;
+  height: 100vh;
   // top: 0px !important;
   width: 100%;
+  overflow: hidden;
 
     h1 {
       font-size: -webkit-xxx-large;
@@ -21,6 +27,19 @@
 
     }
 };
+
+.scene > * {
+		height: 200%;
+		position: relative;
+		top: -100%;
+	}
+
+@media screen and (max-height: 800px) {
+  .scene {
+    height: 800px;
+    top: 0px !important;
+  }
+}
 
 #scene0 {
   background: url('../images/backgrounds/scene01.jpg');
