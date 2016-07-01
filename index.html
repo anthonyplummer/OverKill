@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="overwatch">
   <head>
     <title>OverWatch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,12 +32,11 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- 2. Load our 'modules' -->
+    <script src='app/app.js'></script>
     <script src='app/app.component.js'></script>
-    <script src='app/main.js'></script>
 
     <!-- Load ScrollMagic -->
-    <script src="node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js
-  "></script>
+    <script src="node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
 
     <!-- Load ScrollMagic Plugins -->
     <script src="node_modules/scrollmagic/scrollmagic/minified/plugins/animation.velocity.min.js"></script>
@@ -45,108 +44,16 @@
     <script src="node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script src="node_modules/scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js"></script>
 
-
-
-    <!-- 2. Load 'OverWatch' -->
-    <script src='app/app.js'></script>
-    <script src='assets/js/overwatch.js'></script>
+    <!-- Load Overwatch -->
+    <script src="assets/js/overwatch.js"></script>
 
   </head>
 
   <!-- 3. Display the application -->
-  <body ng-app="overwatch">
-
-    <div class="site-wrapper">
-
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#scene01" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">OverWatch</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Projects <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Profile</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Server Configuration & Install</a></li>
-                    <li><a href="#">Web Application Development</a></li>
-                    <li><a href="#">RESTful API Services</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Anthony's Github</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Heroku of Excellence</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">Submit</button>
-              </form>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">The Dojo</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DO NOT CLICK ME! <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Personal Contact Info</a></li>
-                    <li><a href="#">Professional Contact Info</a></li>
-                    <li><a href="#">Cover Info</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Dossier</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
-        </nav>
-
-        <div class="scene">
-          <overwatch></overwatch>
-        </div>
-
-        <div class="scene">
-          <div ng-view>
-          </div>
-        </div>
-
-        <div class="scene">
-          <div ng-controller="HomeController"></div>
-          <p>What the fuck test?!</p>
-        </div>
-
-        <div class="scene">
-          <div ng-controller="HomeController"></div>
-          <p>What the fuck test?!</p>
-        </div>
-
-        <div class="scene">
-          <div ng-controller="HomeController"></div>
-          <p>What the fuck test?!</p>
-        </div>
-
-        <div class="scene">
-          <div ng-controller="HomeController"></div>
-          <p>What the fuck test?!</p>
-        </div>
-
-        <div class="scene">
-          <div ng-controller="HomeController"></div>
-          <p>What the fuck test?!</p>
-        </div>
-    </div>
-
+  <body>
+    <!-- 2. Load 'OverWatch' -->
+    <overwatch></overwatch>
+    <div ng-view></div>
   </body>
 
 </html>
