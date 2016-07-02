@@ -39,9 +39,24 @@
 }
 
 #greeting {
-  text-align: center;
-  background: url("../images/b_g.png");
-  border: 1px solid;
-  border-radius: 20px;
+  box-sizing: border-box;
+  color: rgb(255, 215, 0);
+  font-family: "Lato";
+  font-weight: bold;
+  height: auto;
+  letter-spacing: 0.3em;
   padding-top: 0.5em;
+  text-align: center;
+  text-shadow: 0.3em 0.3em 0.3em #000;
+  top: 15%;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+
+  h1 {
+    font-size: 5em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
 }

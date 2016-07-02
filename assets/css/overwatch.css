@@ -1,7 +1,12 @@
-/*! OverWatch - v0.1 - 2016-07-01
+/*! OverWatch - v0.1 - 2016-07-02
  * https://www.github.com/plummera/OverWatch//
 * Copyright (c) 2016 Anthony T. Plummer; Unlicensed for the free! */
 .navbar-default {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
   z-index: 2;
 }
 
@@ -78,11 +83,24 @@
 }
 
 #greeting {
-  text-align: center;
-  background: url("../images/b_g.png");
-  border: 1px solid;
-  border-radius: 20px;
+  box-sizing: border-box;
+  color: gold;
+  font-family: "Lato";
+  font-weight: bold;
+  height: auto;
+  letter-spacing: 0.3em;
   padding-top: 0.5em;
+  text-align: center;
+  text-shadow: 0.3em 0.3em 0.3em #000;
+  top: 15%;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+#greeting h1 {
+  font-size: 5em;
+}
+#greeting h2 {
+  font-size: 3em;
 }
 
 body {
