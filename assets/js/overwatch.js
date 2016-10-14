@@ -1,4 +1,4 @@
-/*! OverWatch - v0.1 - 2016-07-03
+/*! OverWatch - v0.1 - 2016-07-07
  * https://www.github.com/plummera/OverWatch//
 * Copyright (c) 2016 Anthony T. Plummer; Unlicensed for the free! */
 app.controller('HomeController', ['$scope', 'photos', function($scope, photos) {
@@ -11,11 +11,11 @@ app.controller('SceneController', function() {
   //Collect scenes
   var scene = document.getElementsByClassName("scene");
 
-  var greeting =  '<div id="greeting" class="col-md-3 col-md-offset-2">' +
+  var greeting =  '<div id="greeting" class="col-md-3">' +
                 '<h1>Anthony T. Plummer</h1>' +
                 '<h2>Enterprise Web Architecht</h2>' +
                 '</div>';
-  var txt1 =  '<div class="col-md-8">' +
+  var txt1 =  '<div class="col-md-12">' +
               '<p>This is the <u>OverWatch</u> program. Simplistic in nature, cell-splitting accuracy, lightweight, portable, and scalable enough to map the entire enterprise column, end-to-end.</p>' +
               '</div>';
 
@@ -62,7 +62,7 @@ var wipeAnimation = new TimelineMax()
 
 // Scene 0
 new ScrollMagic.Scene({
-  triggerElement: scene[0],
+  triggerElement: $(scene[0]),
   triggerHook: "onLeave"
 })
 .setPin(scene[0])
@@ -71,21 +71,22 @@ new ScrollMagic.Scene({
 .addTo(controller);
 
 $('#scene0').append(greeting);
+$('div#greeting').append(txt1);
 
 // Scene 1
 new ScrollMagic.Scene({
-  triggerElement: scene[1],
+  triggerElement: $(scene[1]),
   duration: "2000",
   triggerHook: "onLeave"
 })
 .setPin(scene[1])
-.setVelocity(".box1", {opacity: 0}, {duration: 400})
+.setVelocity(".box1", {opacity: 0}, {duration: 100})
 .addIndicators()
 .addTo(controller);
 
 // Scene 2
 new ScrollMagic.Scene({
-  triggerElement: scene[2],
+  triggerElement: $(scene[2]),
   triggerHook: "onLeave"
 })
 .setPin(scene[2])
@@ -94,7 +95,7 @@ new ScrollMagic.Scene({
 
 // Scene 3
 new ScrollMagic.Scene({
-  triggerElement: scene[3],
+  triggerElement: $(scene[3]),
   triggerHook: "onLeave"
 })
 .setPin(scene[3])
@@ -103,7 +104,7 @@ new ScrollMagic.Scene({
 
 // Scene 4
 new ScrollMagic.Scene({
-  triggerElement: scene[4],
+  triggerElement: $(scene[4]),
   triggerHook: "onLeave"
 })
 .setPin(scene[4])
@@ -112,7 +113,7 @@ new ScrollMagic.Scene({
 
 // Scene 5
 new ScrollMagic.Scene({
-  triggerElement: scene[5],
+  triggerElement: $(scene[5]),
   triggerHook: "onLeave"
 })
 .setPin(scene[5])
@@ -121,7 +122,7 @@ new ScrollMagic.Scene({
 
 // Scene 6
 new ScrollMagic.Scene({
-  triggerElement: scene[6],
+  triggerElement: $(scene[6]),
   triggerHook: "onLeave"
 })
 .setPin(scene[6])

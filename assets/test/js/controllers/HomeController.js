@@ -8,11 +8,11 @@ app.controller('SceneController', function() {
   //Collect scenes
   var scene = document.getElementsByClassName("scene");
 
-  var greeting =  '<div id="greeting" class="col-md-3 col-md-offset-2">' +
+  var greeting =  '<div id="greeting" class="col-md-3">' +
                 '<h1>Anthony T. Plummer</h1>' +
                 '<h2>Enterprise Web Architecht</h2>' +
                 '</div>';
-  var txt1 =  '<div class="col-md-8">' +
+  var txt1 =  '<div class="col-md-12">' +
               '<p>This is the <u>OverWatch</u> program. Simplistic in nature, cell-splitting accuracy, lightweight, portable, and scalable enough to map the entire enterprise column, end-to-end.</p>' +
               '</div>';
 
