@@ -11,7 +11,7 @@ app.controller('SceneController', function() {
   //Collect scenes
   var scene = document.getElementsByClassName("scene");
 
-  var greeting =  '<div id="greeting" class="col-md-3">' +
+  var greeting =  '<div id="greeting" class="col-md-12">' +
                 '<h1>Anthony T. Plummer</h1>' +
                 '<h2>Enterprise Web Architecht</h2>' +
                 '</div>';
