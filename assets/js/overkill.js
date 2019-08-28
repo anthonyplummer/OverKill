@@ -16,7 +16,7 @@ app.controller('SceneController', function() {
                 '<h2>Enterprise Web Architecht</h2>' +
                 '</div>';
   var txt1 =  '<div class="col-md-12">' +
-              '<p>This is the <u>OverWatch</u> program. Simplistic in nature, cell-splitting accuracy, lightweight, portable, and scalable enough to map the entire enterprise column, end-to-end.</p>' +
+              '<p>This is the <u>OverKill</u> program. Simplistic in nature, cell-splitting accuracy, lightweight, portable, and scalable enough to map the entire enterprise column, end-to-end.</p>' +
               '</div>';
 
   for (i=0;i<scene.length;i++) {
