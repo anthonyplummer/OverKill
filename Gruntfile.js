@@ -10,12 +10,12 @@ grunt.initConfig({
    */
 
   project: {
-    name: 'OverWatch',
-    website: 'https://www.github.com/plummera/OverWatch/',
+    name: 'OverKill',
+    website: 'https://www.github.com/plummera/OverKill/',
     assets: 'assets',
     author: 'Anthony T. Plummer',
     css: 'overwatch.css',
-    scss: '<%= project.assets %>/scss/css/overwatch.scss',
+    scss: '<%= project.assets %>/scss/css/overkill.scss',
     js: '<%= project.assets %>/js/overwatch.js'
   },
 
@@ -40,7 +40,7 @@ grunt.initConfig({
 
     sass: {
       src: ['<%= project.assets %>/test/scss/**/*.scss'],
-      dest: '<%= project.assets %>/scss/css/overwatch.scss'
+      dest: '<%= project.assets %>/scss/css/overkill.scss'
     },
 
     js: {
@@ -95,7 +95,7 @@ grunt.initConfig({
       },
 
       files: {
-        '<%= project.assets %>/css/overwatch.css': '<%= project.assets %>/scss/css/overwatch.scss'
+        '<%= project.assets %>/css/overwatch.css': '<%= project.assets %>/scss/css/overkill.scss'
       }
     }
   },
