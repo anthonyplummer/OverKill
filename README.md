@@ -12,4 +12,6 @@ Simplistic in nature, cell-splitting accuracy, lightweight, portable, and scalab
 
 Current: v2.0 (Fork)
 
+* AngularJS application *
 * One-Page Web Interface
+* Google Firebase Ready *

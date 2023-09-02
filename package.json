@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
-    "test": "test"
+    "test": "test",
+    "build": "yarn install"
   },
   "repository": {
     "type": "git",
